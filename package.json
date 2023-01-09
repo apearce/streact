@@ -1,0 +1,40 @@
+{
+  "name": "streact",
+  "version": "0.0.1",
+  "description": "Convert text/HTML strings to React",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apearce/streact.git"
+  },
+  "keywords": [
+    "React",
+    "dangerouslySetInnerHTML"
+  ],
+  "author": "Alan Pearce <alan.pearce@alttag.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apearce/streact/issues"
+  },
+  "homepage": "https://github.com/apearce/streact#readme",
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "babel-preset-minify": "^0.5.2",
+    "jest": "^29.3.1",
+    "react-test-renderer": "^18.2.0"
+  }
+}
