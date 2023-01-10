@@ -50,7 +50,7 @@ export default function streact(str, options) {
 
     let rStr = str;
 
-    Object.entries(options?.replace || {}).forEach(([placeholder, value]) => {
+    Object.entries(options?.replacements || {}).forEach(([placeholder, value]) => {
         rStr = rStr.replaceAll(placeholder, value);
     });
 
