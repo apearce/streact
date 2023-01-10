@@ -15,6 +15,9 @@ Sometimes you need to inject a string of text containing HTML into your React ap
 />
 ```
 
+## Installation
+`npm i streact`
+
 ## HTML Attributes
 Most attributes in your HTML should just work, however there are some where the name or case type is different between HTML and React. HTML attributes should be all lower case while [React expects camel case](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes). HTML uses `class` while React expects `className`. HTML uses `for` while React expects `htmlFor`.
 
