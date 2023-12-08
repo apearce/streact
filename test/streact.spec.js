@@ -5,7 +5,7 @@
 import * as React from "react";
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
-import streact from "../src/index";
+import streact from "../dist/index";
 
 const TestComponent = (props) => (props.children);
 
