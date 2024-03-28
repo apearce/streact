@@ -30,7 +30,7 @@ Most attributes in your HTML should just work, however there are some where the 
     }
 })}
 ```
-The value for the React propert name can also be a function which will get passed the HTML attribute name and value. It should return an object with the attribute name and value. This is useful for Boolean attributes.
+The value for the React property name can also be a function which will get passed the HTML attribute name and value. It should return an object with the attribute name and value. This is useful for Boolean attributes.
 
 ```jsx
 {streact("You can't <button disabled>Click Me</button> because I'm disabled", {
