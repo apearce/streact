@@ -4,7 +4,7 @@
   "description": "Convert text/HTML strings to React",
   "main": "./dist/index.ts",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "tsc",
     "prepare": "npm run build",
     "test": "jest"
   },

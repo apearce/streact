@@ -2,7 +2,7 @@
 
 Sometimes you need to inject a string of text containing HTML into your React app. This may come from a CMS or a localization config file or some other source. React provides an intentionally rather cumbersome way of doing this with [`dangerouslySetInnerHTML`](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml). The problem with `dangerouslySetInnerHTML` is you must use it on an HTML element and sometimes that is not what you want. 
 
-`streact` lets you convert strings comtaining HTML into valid React code that you can use anywhere. You can use it directly as a child of a component or pass it as a prop, no HTML wrapper required.
+`streact` lets you convert strings containing HTML into valid React code that you can use anywhere. You can use it directly as a child of a component or pass it as a prop, no HTML wrapper required.
 
 ```jsx
 <SomeComponent>

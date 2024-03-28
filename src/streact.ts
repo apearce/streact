@@ -1,8 +1,8 @@
 import * as React from "react";
 import { getAttributes, DEFAULT_ATTR_MAPPING } from "./helpers";
-import { AttrMapping, Options } from "./types";
+import { AttrMapping, Options, Tree } from "./types";
 
-export default function streact(str: string, options?: Options) {
+export default function streact(str: string, options?: Options): Tree {
   const attrMapping = {
     ...DEFAULT_ATTR_MAPPING,
     ...options?.attributes
@@ -10,19 +10,7 @@ export default function streact(str: string, options?: Options) {
 
   function buildTree(
     node: Node
-  ):
-    | (
-        | string
-        | React.DOMElement<
-            {
-              [k: string]: any;
-            },
-            Element
-          >
-        | null
-        | undefined
-      )[]
-    | undefined {
+  ): Tree {
     return node.hasChildNodes()
       ? Array.from(node.childNodes).map((currentNode, child_idx) => {
           if (currentNode.nodeType === Node.TEXT_NODE) {
