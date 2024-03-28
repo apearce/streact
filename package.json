@@ -2,10 +2,11 @@
   "name": "streact",
   "version": "1.0.2",
   "description": "Convert text/HTML strings to React",
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
+    "pretest": "npm run build",
     "test": "jest"
   },
   "files": [
